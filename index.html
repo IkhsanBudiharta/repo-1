@@ -1,125 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ikhsan Budiharta</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <title>Fan Book Site</title>
-
-    <style>
-      .mypic {
-        font-family: "Nanum Pen Script", cursive;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .mypic {
-        width: 100%;
-        height: 300px;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ca-times.brightspotcdn.com/dims4/default/41c0cee/2147483647/strip/true/crop/7505x5291+0+0/resize/1200x846!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F00%2F12%2F4e46c9344dcbb732580ecc7f8316%2Fsouth-korea-bts-butter-74090.jpg');
-        background-position: center; 
-        background-size: cover;
-
-        color: white;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .mypost{
-        width: 95%;
-        max-width: 500px;
-        margin: 20px auto 20px auto;
-        padding: 20px;
-        box-shadow: 0px 0px 3px 0px black;
-      }
-
-      .mypost > button {
-        margin-top: 15px;
-      }
-
-      .mycards {
-        width: 95%;
-        max-width: 500px;
-        margin: auto;
-      }
-
-      .mycards > .card {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-    </style>
-</head>
-
-<body>
-  <div class="mypic">
-    <h1>BTS Fan Book</h1>
-  </div>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-  <div class="mypost">
-    <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="Enter your nickname here">
-      <label for="floatingInput">Nickname</label>
-    </div>
-    <div class="form-floating">
-      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-      <label for="floatingTextarea">Fan Message</label>
-    </div>
-    <button type="button" class="btn btn-dark">Leave a fan message</button>
-  </div>
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles/style.css">
 
-<div class="mycards">
-  <div class="card">
-    <div class="card-body">
-     <blockquote class="blockquote mb-0">
-       <p>Love your new album!</p>
-        <footer class="blockquote-footer">Breadboy9000</footer>
-      </blockquote>
-    </div>
-  </div>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="#">My portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-dark d-none d-lg-block" href="#contact">Contact me!</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
 
-  <div class="card">
-    <div class="card-body">
-     <blockquote class="blockquote mb-0">
-       <p>You're the best!</p>
-        <footer class="blockquote-footer">ClassicWonder19</footer>
-      </blockquote>
-  </div>
-</div>
 
-<div class="card">
-  <div class="card-body">
-   <blockquote class="blockquote mb-0">
-     <p>Marry me!</p>
-      <footer class="blockquote-footer">Wonderbread10</footer>
-    </blockquote>
-  </div>
-</div>
+    <!-- hero -->
+    <section class="hero" id="hero">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="display-4 fw-bold">Hey there!</h1>
+                    <p>I'm Muhammad Ikhsan Budiharta, a junior web developer with emphashis on front-end. 
+                        I create user-friendly interfaces for websites. Also, I'm interested in UI/UX design.
+                    </p>
+                    <button class="btn btn-outline-dark btn-lg">More About Me</button>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="images/profil.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero -->
+    
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">About Me</h2>
+            <p>As a dedicated web designer, I am committed to creating visually stunning and intuitive websites that provide exceptional user experiences. 
+                My passion drives me to continuously expand my skillset, and I approach each project with unwavering enthusiasm and attention to detail.</p>
+            <p>Knowledgeable in HTML5 & CSS languages and experienced in designing User Interface for websites. Engage user experience through efficient version control and testing.</p>
+        </div>
+    </section>
+    <!-- About -->
+    
+    <!-- Skill-->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Skills</h2>
+            <h6>What i choose to be good at</h6>
+            <div class="row">
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="images/html-css-js.jpeg" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="images/bootstrap-tailwind.jpeg" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="images/figma.jpeg" class="card-img-top mt-3" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skill -->
 
-<div class="card">
-  <div class="card-body">
-   <blockquote class="blockquote mb-0">
-     <p>Can't wait to see you guys live</p>
-      <footer class="blockquote-footer">Xianpei1000</footer>
-    </blockquote>
-  </div>
-</div>
 
-</div>
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Portfolio</h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="images/user interface.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">User Interface</h5>
+                            <p class="card-text">Mendesain user interface  proposal hibah klinik dosen menggunakan figma.</p>
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="images/front end.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Front end</h5>
+                            <p class="card-text">Membangun landing page web kursus E-learning mengenai materi kebudayaan di Indonesia. </p>
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="images/sql.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Database</h5>
+                            <p class="card-text">Mengintegrasikan Relational Database Management System dengan MySql. </p>
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+
+
+<!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Lets get in touch!</h2>
+            <div class="row">
+                <div class="col-sm-4 mt-4">
+                    <a href="#">ikhsanbudiharta01@gmail.com</a>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <div class="social-media">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <a href="#">+62813-8286-0723</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    
+    
+    <footer class="text-center p-3 bg-body-tertiary">
+        <div>© 2023. All Rights Reserved.</div>
+    </footer>
+           
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
